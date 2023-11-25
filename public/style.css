@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(24, 22, 22);
+    color: #dcdcdc;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: larger;
+    display: grid;
+    place-items: center;
+}
+
+.title{
+    margin: 20px 0;
+}
+
+.main{
+    border: 5px solid #292828;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: rgb(24, 22, 22);
+}
+
+.name{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: #7e7e7e;
+    background-color: rgb(24, 22, 22);
+}
+
+.name > span{
+    color: #dcdcdc;
+}
+
+.name-input{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+    font-weight: 1000;
+    color: #dcdcdc;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: rgb(24, 22, 22);
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #292828;
+    width: 350px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.message-container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.message-left, .message-right{
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.message-left {
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color: #dcdcdc;
+    color: #2d2d2d;
+    box-shadow: -2px 2px 4px #dcdcdc;
+}
+
+.message-right {
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #2d2d2d;
+    box-shadow: 2px 2px 4px #dcdcdc;
+}
+
+.message-left > p > span, .message-right > p > span{
+    display: block;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.live{
+    font-style: italic;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    text-align: center;
+}
+
+.message-form{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.message-input{
+    border: none;
+    flex-grow: 1;
+    height: 48px;
+    font-size: 16px;
+    outline: none;
+    padding: 0px 12px;
+    background-color: rgb(24, 22, 22);
+    color: #dcdcdc;
+    font-family: 'Nanum Pen Script', cursive;
+    font-style: italic;
+}
+
+.send-button{
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    padding: 0px 20px;
+    outline: none;
+    background-color: rgb(24, 22, 22);
+    color: #dcdcdc;
+    font-family: 'Nanum Pen Script', cursive;
+    cursor: pointer;
+}
+
+.divider{
+    height: 48px;
+    width: 2px;
+    background-color: #292828;
+}
+
+.connected-total{
+    margin: 20px 0;
+}
