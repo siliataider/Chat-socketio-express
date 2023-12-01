@@ -41,4 +41,4 @@ SocketChat is a real-time chat application built using Node.js, Express, and Soc
 4. **Open in Browser:**
     Open your browser and go to [http://localhost:4000](http://localhost:4000).
 
-5. **The more the merrier:** Open more tabs and exchange messages.
+5. **The more the merrier:** Open more tabs and exchange messages between multiple participants!
